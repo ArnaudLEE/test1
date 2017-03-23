@@ -1,0 +1,133 @@
+package step1_src_1;
+
+public class GravityCalculator {
+	//class GravityCalculator {
+		public static void main(String[] arguments){
+		double gravity =-9.81; // Earth's gravity in m/s^2
+		double fallingTime = 10;
+		double initialVelocity = 0.0;
+		double finalVelocity =initialVelocity + fallingTime * gravity ;
+		double  initialPosition = 0.0;
+		double  finalPosition = initialPosition + 0.5 * gravity *Math.pow(fallingTime, 2.0) + initialVelocity * fallingTime ;
+		// Add the formulas for position and velocity
+		System.out.println("The object's position after " + fallingTime + " seconds is "
+		+ finalPosition + " m.");
+		// Add output line for velocity (similar to position)
+		System.out.println("The object's velocity after " + fallingTime + " seconds is " + finalVelocity + "m^2");
+		}
+		//}
+		
+		public class GravityCalculator {
+			public static double multi(double a, double b){
+				return a * b ;
+			// method for multiplication
+			}
+			public static double powertosquare(double a1, double b1){
+			    double C1 = Math.pow(a1,b1);
+			    		return C1 ;
+			}
+			public static double summation(double a2, double b2){
+				double C2 = a2 + b2 ;
+				return C2; 
+			}
+			// add 2 more methods for powering to square and summation (similar to multiplication)
+			public static void outline1(double a, double b) {
+				System.out.println("The object's position after " + a + " second is " + b +"m.")
+			// method for printing out a result
+			}
+			public static void outline2(double a, double b){
+				System.out.println("The object's velocity after " + a + "second is " + b +"m^2")
+			}
+			public static void main(String[] args) {
+			// compute the position and velocity of an object with defined methods and print out the result
+				double gravity = -9.81; // Earth's gravity in m/s^2
+				double fallingTime = 10;
+				double initialVelocity = 0.0;
+				double initialPosition = 0.0;
+				double halfgravity = 0.5*gravity;
+				double fallingtime2 = powertosquare(fallingTime,2.0);
+				double gra = multi(halfgravity, fallingtime2) ;
+				double inivelo = multi(initialVelocity,fallingTime);
+				double ohla = summation(gra,inivelo);
+				double Finalpos = summation(initialPosition,ohla); 
+				outline1(fallingTime, Finalpos);
+				double acce = multi(fallingTime, gravity);
+				double FinalVelocity = summation(initialVelocity,acce);
+				outline2(fallingTIme, FinalVelocity);
+			
+			}
+			}
+}
+
+
+
+
+part 1
+
+
+package step1_src_1;
+
+public class GravityCalculator {
+	//class GravityCalculator {
+		public static void main(String[] arguments){
+		double gravity =-9.81; // Earth's gravity in m/s^2
+		double fallingTime = 10;
+		double initialVelocity = 0.0;
+		double finalVelocity =initialVelocity + fallingTime * gravity ;
+		double  initialPosition = 0.0;
+		double  finalPosition = initialPosition + 0.5 * gravity *Math.pow(fallingTime, 2.0) + initialVelocity * fallingTime ;
+		// Add the formulas for position and velocity
+		System.out.println("The object's position after " + fallingTime + " seconds is "
+		+ finalPosition + " m.");
+		// Add output line for velocity (similar to position)
+		System.out.println("The object's velocity after " + fallingTime + " seconds is " + finalVelocity + "m^2");
+		}
+		//}
+		
+
+
+part 2
+
+package step1_src_1;
+		
+		public class GravityCalculator {
+			public static double multi(double a, double b){
+				return a * b ;
+			// method for multiplication
+			}
+			public static double powertosquare(double a1, double b1){
+			    double C1 = Math.pow(a1,b1);
+			    		return C1 ;
+			}
+			public static double summation(double a2, double b2){
+				double C2 = a2 + b2 ;
+				return C2; 
+			}
+			// add 2 more methods for powering to square and summation (similar to multiplication)
+			public static void outline1(double a, double b) {
+				System.out.println("The object's position after " + a + " second is " + b +"m.");
+			// method for printing out a result
+			}
+			public static void outline2(double a, double b){
+				System.out.println("The object's velocity after " + a + " second is " + b +"m^2");
+			}
+			public static void main(String[] args) {
+			// compute the position and velocity of an object with defined methods and print out the result
+				double gravity = -9.81; // Earth's gravity in m/s^2
+				double fallingTime = 10;
+				double initialVelocity = 0.0;
+				double initialPosition = 0.0;
+				double halfgravity = 0.5*gravity;
+				double fallingtime2 = powertosquare(fallingTime,2.0);
+				double gra = multi(halfgravity, fallingtime2) ;
+				double inivelo = multi(initialVelocity,fallingTime);
+				double ohla = summation(gra,inivelo);
+				double Finalpos = summation(initialPosition,ohla); 
+				outline1(fallingTime, Finalpos);
+				double acce = multi(fallingTime, gravity);
+				double FinalVelocity = summation(initialVelocity,acce);
+				outline2(fallingTime, FinalVelocity);
+			
+			}
+			}
+
